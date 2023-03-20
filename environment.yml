@@ -1,4 +1,4 @@
-name: ClusterMap
+name: clustermap
 channels:
   - anaconda
   - conda-forge
