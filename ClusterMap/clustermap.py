@@ -77,6 +77,8 @@ class ClusterMap():
         self.dapi = dapi
         if self.dapi is not None:
             self.dapi_binary, self.dapi_stacked = binarize_dapi(self.dapi,fast_preprocess,gauss_blur, sigma)
+        else:
+            self.dapi_binary = self.dapi_stacked = None
         self.gene_list = gene_list
         self.num_dims = num_dims
         self.xy_radius = xy_radius
